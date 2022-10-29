@@ -15,6 +15,7 @@ main {
     width: 100vw;
     position: relative;
     margin: 0 auto;
+    display: flex;
 }
 
 .row {
@@ -41,7 +42,6 @@ main {
 
 .col-logo img {
     max-width: 300px;
-    padding: 0 30px;
 }
  
 .col-logo h2 {
@@ -132,6 +132,32 @@ main {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 572px) {
+
+    main .row, main .col-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .row, .col-form { 
+        width: 400px;
+        align-content: center;
+        align-items: center;
+        height: 5vh;
+    }
+
+    .row {
+        width: 450px;
+        padding-top: 0px;
+    }
+
+    p {
+        padding-bottom: 45px;
+    }
+
+}
 
 
 
